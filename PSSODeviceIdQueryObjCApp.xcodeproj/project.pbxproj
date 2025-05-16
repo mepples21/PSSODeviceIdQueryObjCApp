@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		09F6751B2DD7F61F00503FAD /* MSAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F675152DD7EA4D00503FAD /* MSAL.framework */; };
+		09F6751C2DD7F61F00503FAD /* MSAL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09F675152DD7EA4D00503FAD /* MSAL.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		09F6751E2DD7F62200503FAD /* Pods_PSSODeviceIdQueryObjCApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7115E4753B4F4086EB44A2F9 /* Pods_PSSODeviceIdQueryObjCApp.framework */; };
+		09F6751F2DD7F62200503FAD /* Pods_PSSODeviceIdQueryObjCApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7115E4753B4F4086EB44A2F9 /* Pods_PSSODeviceIdQueryObjCApp.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		096BD03C2DD7C631005DF9BE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -16,10 +23,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		09F6751D2DD7F61F00503FAD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09F6751C2DD7F61F00503FAD /* MSAL.framework in Embed Frameworks */,
+				09F6751F2DD7F62200503FAD /* Pods_PSSODeviceIdQueryObjCApp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		096BD03E2DD7C631005DF9BE /* PSSODeviceIdQueryObjCApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PSSODeviceIdQueryObjCApp; sourceTree = BUILT_PRODUCTS_DIR; };
+		096BD03E2DD7C631005DF9BE /* PSSODeviceIdQueryObjCApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = PSSODeviceIdQueryObjCApp; path = /Users/miepping/Github/PSSODeviceIdQueryObjCApp/build/Debug/PSSODeviceIdQueryObjCApp; sourceTree = "<absolute>"; };
+		09F675152DD7EA4D00503FAD /* MSAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MSAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7115E4753B4F4086EB44A2F9 /* Pods_PSSODeviceIdQueryObjCApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PSSODeviceIdQueryObjCApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B01AA602C8CCD38A2364644 /* Pods-PSSODeviceIdQueryObjCApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSSODeviceIdQueryObjCApp.debug.xcconfig"; path = "Target Support Files/Pods-PSSODeviceIdQueryObjCApp/Pods-PSSODeviceIdQueryObjCApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E8A31327B76E8F5108B713A7 /* Pods-PSSODeviceIdQueryObjCApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PSSODeviceIdQueryObjCApp.release.xcconfig"; path = "Target Support Files/Pods-PSSODeviceIdQueryObjCApp/Pods-PSSODeviceIdQueryObjCApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -35,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F6751B2DD7F61F00503FAD /* MSAL.framework in Frameworks */,
+				09F6751E2DD7F62200503FAD /* Pods_PSSODeviceIdQueryObjCApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,15 +71,34 @@
 			children = (
 				096BD0402DD7C631005DF9BE /* PSSODeviceIdQueryObjCApp */,
 				096BD03F2DD7C631005DF9BE /* Products */,
+				AFCCF9EB882F5AEE4888D1DE /* Pods */,
+				955583083F4CB6B3CF2495D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		096BD03F2DD7C631005DF9BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				096BD03E2DD7C631005DF9BE /* PSSODeviceIdQueryObjCApp */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		955583083F4CB6B3CF2495D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09F675152DD7EA4D00503FAD /* MSAL.framework */,
+				7115E4753B4F4086EB44A2F9 /* Pods_PSSODeviceIdQueryObjCApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFCCF9EB882F5AEE4888D1DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B01AA602C8CCD38A2364644 /* Pods-PSSODeviceIdQueryObjCApp.debug.xcconfig */,
+				E8A31327B76E8F5108B713A7 /* Pods-PSSODeviceIdQueryObjCApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -64,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 096BD0452DD7C631005DF9BE /* Build configuration list for PBXNativeTarget "PSSODeviceIdQueryObjCApp" */;
 			buildPhases = (
+				EA7122869330BE63728194DE /* [CP] Check Pods Manifest.lock */,
 				096BD03A2DD7C631005DF9BE /* Sources */,
 				096BD03B2DD7C631005DF9BE /* Frameworks */,
 				096BD03C2DD7C631005DF9BE /* CopyFiles */,
+				09F6751D2DD7F61F00503FAD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -76,8 +122,6 @@
 				096BD0402DD7C631005DF9BE /* PSSODeviceIdQueryObjCApp */,
 			);
 			name = PSSODeviceIdQueryObjCApp;
-			packageProductDependencies = (
-			);
 			productName = PSSODeviceIdQueryObjCApp;
 			productReference = 096BD03E2DD7C631005DF9BE /* PSSODeviceIdQueryObjCApp */;
 			productType = "com.apple.product-type.tool";
@@ -114,6 +158,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA7122869330BE63728194DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PSSODeviceIdQueryObjCApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		096BD03A2DD7C631005DF9BE /* Sources */ = {
@@ -239,26 +308,31 @@
 				MACOSX_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		096BD0462DD7C631005DF9BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B01AA602C8CCD38A2364644 /* Pods-PSSODeviceIdQueryObjCApp.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P74F87H95T;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(BUILT_PRODUCTS_DIR)/MSAL/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		096BD0472DD7C631005DF9BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A31327B76E8F5108B713A7 /* Pods-PSSODeviceIdQueryObjCApp.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P74F87H95T;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(BUILT_PRODUCTS_DIR)/MSAL/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
